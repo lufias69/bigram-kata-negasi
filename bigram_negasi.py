@@ -9,9 +9,7 @@ def biGram(kata_negasi, kata_dicari):
     for i in kata_negasi:
         index_replace = [(m.end(0)) for m in re.finditer(i,kata_dicari)]
         n_index += index_replace
-    #print(n_index)
     for rep in n_index:
-        ##print(len(n_index))
         huruf = [x for x in kata_dicari]
         huruf[rep] = "_"
         kata_dicari = "".join(huruf)
