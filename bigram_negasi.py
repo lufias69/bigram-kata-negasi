@@ -1,6 +1,5 @@
 import re
-kata_negasi = ["tidak", "bukan"]
-kata_dicari = "saya tidak marah dan tidak makan bukan juga tidak pergi"
+
 def biGram(kata_negasi, kata_dicari):
     if type(kata_negasi) != list:
         kata_negasi = [kata_negasi]  
@@ -15,4 +14,6 @@ def biGram(kata_negasi, kata_dicari):
         kata_dicari = "".join(huruf)
     return kata_dicari
 
+kata_negasi = ["tidak", "bukan"]
+kata_dicari = "saya tidak marah dan tidak makan bukan juga tidak pergi"
 biGram(kata_negasi, kata_dicari)
